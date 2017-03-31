@@ -39,6 +39,8 @@
             <div class="card-block">
               <h5 class="card-title">Booking Number : <small class="text-muted">00001</small></h5>
               <h5 class="card-title">Pincode : <small class="text-muted">1234</small></h5>
+              <h5 class="card-title">Name : <small class="text-muted">Teerawut Kitbunjerdjarud</small></h5>
+              <h5 class="card-title">Phone Number : <small class="text-muted">055-555-555</small></h5>
               <h5 class="card-title">Email : <small class="text-muted">example@example.com</small></h5>
             </div>
           </div>
@@ -47,12 +49,37 @@
           <div class="card">
             <h3 class="card-header">Booking Detail</h3>
             <div class="card-block">
+              <h5 class="card-title">Homestay Name : <small class="text-muted">Example 1</small></h5>
               <h5 class="card-title">Booking Detail : <small class="text-muted">2 nights, 1 Room, 2 People</small></h5>
-              <h5 class="card-title">Checkin : <small class="text-muted">1234</small></h5>
-              <h5 class="card-title">Checkout : <small class="text-muted">example@example.com</small></h5>
+              <h5 class="card-title">Checkin : <small class="text-muted">31/03/2017</small></h5>
+              <h5 class="card-title">Checkout : <small class="text-muted">02/04/2017</small></h5>
               <h5 class="card-title">Room Price : <small class="text-muted">3000 THB</small></h5>
+              <h5 class="card-title">Contact : <small class="text-muted">012-345-678</small></h5>
             </div>
           </div>
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-12">
+          <div id="map" style="height:400px"></div>
+          <script>
+          function initMap() {
+          var uluru = {lat: 13.730994, lng: 100.781260};
+          var map = new google.maps.Map(document.getElementById('map'), {
+          zoom: 17,
+          center: uluru
+          });
+          var marker = new google.maps.Marker({
+          position: uluru,
+          map: map
+          });
+          }
+          </script>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-5">
+        <div class="col-1">
+          <button type="button" class="btn btn-primary btn-lg">Print</button>
         </div>
       </div>
     </div>
@@ -60,5 +87,6 @@
     <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCkYO_MOXEHgK1KVdnFE3t_JS8LswqIh7E&callback=initMap"></script>
   </body>
 </html>
